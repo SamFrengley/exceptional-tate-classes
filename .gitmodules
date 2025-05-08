@@ -1,0 +1,3 @@
+[submodule "Galois-Frob-Polys"]
+	path = Galois-Frob-Polys
+	url = git@github.com:sarangop1728/Galois-Frob-Polys.git
