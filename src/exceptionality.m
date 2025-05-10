@@ -59,7 +59,8 @@ function GenerationCondition(D, G0, G1)
 end function;
 
 intrinsic HasAdmissibleFiltration(G::GrpPerm, w::SeqEnum) -> BoolElt, SeqEnum
-{Returns true if and only if there exists an admissible filtration of G.}
+{Returns true if and only if there exists an strongly p-admissible filtration 
+of G for some p.}
   d := #w div 2;
   w := ReorderWeight(w);
   

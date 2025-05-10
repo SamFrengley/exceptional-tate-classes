@@ -23,10 +23,11 @@ intrinsic WeightStabiliser(G::GrpPerm, wt::SeqEnum) -> GrpPerm
 end intrinsic;
 
 
-intrinsic IsPAdmissible(filtr::SeqEnum[GrpPerm], 
+intrinsic IsStronglyPAdmissible(filtr::SeqEnum[GrpPerm], 
                         w::SeqEnum, 
                         p::RngIntElt) -> BoolElt
-{Checks if the filtration is p-admissible. filtr goes [G, D, I, Ramification]}
+{Checks if the filtration can be strongly p-admissible. 
+Input is a list filtr=[G, D, G_0, G_1], a weight function and a prime p.}
   d := #w div 2;
   
   for i in [1..3] do
@@ -327,7 +328,7 @@ function FindAppropriateP(filtr, AutL, G_to_AutL, tau, P, w)
                      forall{g : g in new_filtr[2] | tau(g)(new_P) eq new_P};
    
     
-    if IsPAdmissible(new_filtr, w, p) then
+    if IsStronglyPAdmissible(new_filtr, w, p) then
       return new_filtr, new_P;
     end if;
   end for;
@@ -362,7 +363,7 @@ divisors P of p in O_L and check p-admissibility.}
                    [GroupName(fil) : fil in filtr];
   
   if not EditP then
-    require IsPAdmissible(filtr, w, p) : "This is not a p-admissible filtration";
+    require IsStronglyPAdmissible(filtr, w, p) : "This is not a strongly p-admissible filtration";
   else 
     filtr, P := FindAppropriateP(filtr, AutL, G_to_AutL, tau, P, w);
   end if;
