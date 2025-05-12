@@ -5,7 +5,7 @@ This directory contains scripts which either give examples of the functionality 
 - The script `1-4-theorem-proof.m` proves Theorem 1.4 (under the assumption that `1-4-theorem-data-generate.m` has populated the data in `./output-data/`). 
 
 - The script `1-4-theorem-data-generate.m` generates the data used in the proof of Theorem 1.4. This file takes ***a long time*** (several hours on a single core of one of the authors' laptops). For convinience we have saved this output in `./output-data/` (running the script will overwrite the saved data, though the output should be identical). The specific computations are:
-    - We enumerate all (transitive) subgroups $G \subset W_{2d}$ up to $\operatorname{Stab}(w)$-conjugacy. 
+    - We enumerate all (transitive) subgroups $G \subset W_{2d}$ up to $\mathrm{Stab}(w)$-conjugacy. 
     - We compute in each case for $\rho = (w,G)$:
         1. Whether $\rho$ is geometrically simple,
         2. The angle rank of $\rho$,
