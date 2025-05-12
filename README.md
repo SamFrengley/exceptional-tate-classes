@@ -1,6 +1,6 @@
 This is the GitHub repository containing code related to the paper [*Galois groups of simple abelian varieties over finite fields and exceptional Tate classes*](https://arxiv.org/) by Santiago Arango-Piñeros, Sam Frengley, and Sameera Vemulapalli [arXiv:nnnnnn](https://arxiv.org/), [DOI:nnnnnn](https://www.doi.org/).
 
-The code in this repository is written in [`Magma`](http://magma.maths.usyd.edu.au/magma/).
+The code in this repository is written in [`Magma`](http://magma.maths.usyd.edu.au/magma/) and tested on `Magma` V2.28-11. 
 
 ## Directory structure
 - `src` contains the main intrinsics provided (in particular an implementation of Algorithm 6.2 and code to check in a weighted permutation representation is exceptional).
