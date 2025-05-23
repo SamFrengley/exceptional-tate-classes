@@ -1,4 +1,4 @@
-This is the GitHub repository containing code related to the paper [*Galois groups of simple abelian varieties over finite fields and exceptional Tate classes*]([https://arxiv.org/](https://arxiv.org/abs/2505.09589)) by Santiago Arango-Piñeros, Sam Frengley, and Sameera Vemulapalli [arXiv:2505.09589](https://arxiv.org/abs/2505.09589), [DOI:10.48550/arXiv.2505.09589](https://doi.org/10.48550/arXiv.2505.09589).
+This is the GitHub repository containing code related to the paper [*Galois groups of simple abelian varieties over finite fields and exceptional Tate classes*](https://arxiv.org/abs/2505.09589) by Santiago Arango-Piñeros, Sam Frengley, and Sameera Vemulapalli [arXiv:2505.09589](https://arxiv.org/abs/2505.09589), [DOI:10.48550/arXiv.2505.09589](https://doi.org/10.48550/arXiv.2505.09589).
 
 The code in this repository is written in [`Magma`](http://magma.maths.usyd.edu.au/magma/) and tested on `Magma` V2.28-11. 
 
